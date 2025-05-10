@@ -1,0 +1,51 @@
+/* Animations for the Crypto Card component */
+
+@keyframes float {
+  0% {
+    transform: translateY(-25%) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-35%) rotate(-6deg);
+  }
+  100% {
+    transform: translateY(-25%) rotate(-6deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Adding a subtle shadow for the floating card */
+.animate-float {
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  @keyframes float {
+    0% {
+      transform: translateY(-20%) rotate(-6deg);
+    }
+    50% {
+      transform: translateY(-30%) rotate(-6deg);
+    }
+    100% {
+      transform: translateY(-20%) rotate(-6deg);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  @keyframes float {
+    0% {
+      transform: translateY(-15%) rotate(-6deg);
+    }
+    50% {
+      transform: translateY(-25%) rotate(-6deg);
+    }
+    100% {
+      transform: translateY(-15%) rotate(-6deg);
+    }
+  }
+}
