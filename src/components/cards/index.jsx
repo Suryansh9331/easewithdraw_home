@@ -5,7 +5,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import GooglePlay from "../../assets/images/GooglePlay.svg";
-import ApplePlay from "../../assets/images/Appleplay.svg";
+import ApplePlay from "../../assets/images/ApplePay.svg";
 import card1 from "../../assets/images/card1.png";
 import card2 from "../../assets/images/card2.png";
 import './CryptoCardStyle.css'; // We'll create this file for custom animations
