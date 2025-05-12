@@ -281,7 +281,7 @@ export default function RedotPayScroller() {
   const visibleCards = getVisibleCards();
 
   return (
-    <div className="w-full py-30 bg-white">
+    <div className="w-full h-auto py-30 bg-white">
       <style>{`
         .card-left {
           transform: scale(0.85) translateX(20px);
@@ -317,7 +317,7 @@ export default function RedotPayScroller() {
           {visibleCards.map(({ card, position, index }) => (
             <div
               key={`${index}-${position}`}
-              className={`absolute w-80 h-96 py-4 rounded-3xl bg-cover bg-center shadow-lg flex-shrink-0 relative card-transition card-${position}`}
+              className={` w-80 h-96 py-4 rounded-3xl bg-cover bg-center shadow-lg flex-shrink-0 relative card-transition card-${position}`}
               style={{ 
                 backgroundImage: `url(${card.image})`,
                 transitionDelay: position === 'center' ? '0ms' : '50ms'

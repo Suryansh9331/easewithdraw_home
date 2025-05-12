@@ -2,7 +2,7 @@ import React from 'react';
 import card2 from "../../assets/images/card2.png"
 const HologramComponent = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <div className="relative w-full h-auto overflow-hidden lg:py-28 bg-black">
       {/* Hologram Background Pattern */}
       <div className="absolute inset-0">
         {/* Background Pattern */}
@@ -63,19 +63,19 @@ const HologramComponent = () => {
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center space-y-8 px-4">
           {/* Heading */}
-          <h2 className="text-3xl md:text-6xl uppercase font-bold  text-sky-200">
+          <h2 className="text-3xl md:text-6xl uppercase font-bold  text-sky-200 mt-20 mb-10">
            Know Your Score, Own Your Future
           </h2>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-cyan-300 tracking-wide animate-pulse" 
+          <p className="text-xl md:text-2xl text-cyan-300 tracking-wide animate-pulse mt-8 mb-8" 
              style={{ animationDelay: '0.5s' }}>
           Take the first step toward smarter financial decisions — check your credit score with confidence.
           </p>
           
           {/* Button */}
          <a href='#'>
-          <button className="relative group px-12 py-4 mt-16 bg-transparent border-2 rounded-full border-cyan-400 text-cyan-400 text-lg font-semibold hover:bg-cyan-400/10 transition-all duration-300 glitch-button">
+          <button className="relative group px-12 py-4 mt-20 mb-20 bg-transparent border-2 rounded-full border-cyan-400 text-cyan-400 text-lg font-semibold hover:bg-cyan-400/10 transition-all duration-300 glitch-button">
             <span className="relative z-10 ">CHECK NOW</span>
             <div className="absolute inset-0 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
