@@ -64,7 +64,7 @@ const CryptoCardComponent = () => {
       } else {
         setProgress(newProgress);
       }
-    }, 50);
+    }, 90);
   };
   
   // Initialize automatic tab switching and progress
@@ -236,7 +236,7 @@ const CryptoCardComponent = () => {
               {activeTab === 'physical' && (
                 <div className="relative h-0.5 bg-gray-200 mt-1">
                   <div 
-                    className="absolute left-0 top-0 h-full bg-black transition-all duration-100 ease-linear"
+                    className="absolute left-0 top-0 h-full bg-black transition-all duration-300 ease-linear"
                     style={{ width: `${progress}%` }}
                   ></div>
                 </div>

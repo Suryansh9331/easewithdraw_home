@@ -2,8 +2,12 @@
 
 @keyframes float {
   0% {
-    transform: translateY(-25%) rotate(-6deg);
-  }
+    transform: translateY(-20%) rotate(-6deg);
+    -webkit-transform: translateY(-20%) rotate(-6deg);
+    -moz-transform: translateY(-20%) rotate(-6deg);
+    -ms-transform: translateY(-20%) rotate(-6deg);
+    -o-transform: translateY(-20%) rotate(-6deg);
+}
   50% {
     transform: translateY(-45%) rotate(-6deg);
     -webkit-transform: translateY(-45%) rotate(-6deg);
@@ -12,8 +16,12 @@
     -o-transform: translateY(-45%) rotate(-6deg);
 }
   100% {
-    transform: translateY(-25%) rotate(-6deg);
-  }
+    transform: translateY(-20%) rotate(-6deg);
+    -webkit-transform: translateY(-20%) rotate(-6deg);
+    -moz-transform: translateY(-20%) rotate(-6deg);
+    -ms-transform: translateY(-20%) rotate(-6deg);
+    -o-transform: translateY(-20%) rotate(-6deg);
+}
 }
 
 .animate-float {
