@@ -169,7 +169,7 @@ const flyingPlaneStyles = `
     }
     80% {
       transform: translateX(50%) translateY(-150px) rotate(-180deg);
-      opacity: 0.7;
+      opacity: 0;
     }
     100% {
       transform: translateX(50%) translateY(-150px) rotate(-180deg);
@@ -211,11 +211,11 @@ const CryptoToFiatBanner = () => {
   }, []);
 
   const countryFlags = [
-    { country: "Brazil", flag: "🇧🇷", top: "20%", left: "15%" },
+    { country: "Brazil", flag: "🇧🇷", top: "20%", left: "5%" },
     { country: "UAE", flag: "🇦🇪", top: "30%", right: "15%" },
-    { country: "Romania", flag: "🇷🇴", top: "45%", left: "20%" },
-    { country: "Thailand", flag: "🇹🇭", top: "52%", right: "25%" },
-    { country: "Saudi Arabia", flag: "🇸🇦", top: "60%", left: "17%" },
+    { country: "Romania", flag: "🇷🇴", top: "45%", left: "25%" },
+    { country: "Thailand", flag: "🇹🇭", top: "59%", right: "5%" },
+    { country: "Saudi Arabia", flag: "🇸🇦", top: "75%", left: "7%" },
   ];
 
   return (
@@ -234,7 +234,7 @@ const CryptoToFiatBanner = () => {
         style={{
           left: "-50px",
           bottom: "10%",
-          animation: "flyAcrossAndBack 20s infinite",
+          animation: "flyAcrossAndBack 30s infinite",
           animationPlayState: isVisible ? "running" : "paused"
         }}
       />
