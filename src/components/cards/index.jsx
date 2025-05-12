@@ -54,8 +54,8 @@ const CryptoCardComponent = () => {
       const elapsed = Date.now() - startTime;
       const newProgress = (elapsed / INTERVAL_DURATION) * 100;
       
-      if (newProgress >= 100) {
-        setProgress(100);
+      if (newProgress >= 120) {
+        setProgress(500);
         clearInterval(intervalRef.current);
         
         // Switch to next tab
@@ -64,7 +64,7 @@ const CryptoCardComponent = () => {
       } else {
         setProgress(newProgress);
       }
-    }, 90);
+    }, 150);
   };
   
   // Initialize automatic tab switching and progress
@@ -220,7 +220,7 @@ const CryptoCardComponent = () => {
               {activeTab === 'virtual' && (
                 <div className="relative h-0.5 bg-gray-200 mt-1">
                   <div 
-                    className="absolute left-0 top-0 h-full bg-black/40 transition-all duration-100 ease-linear"
+                    className="absolute left-0 top-0 h-full bg-black transition-all duration-300 ease-linear"
                     style={{ width: `${progress}%` }}
                   ></div>
                 </div>
