@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
 
-import tab1 from "../../assets/images/tab1.png";
-import tab3 from "../../assets/images/tab3.png";
-import tab4 from "../../assets/images/tab4.png";
-import tab5 from "../../assets/images/tab5.png";
+import long from "../../assets/images/long.jpg"
+import happy1 from "../../assets/images/happy1.jpg"
+import happy2 from "../../assets/images/happy2.jpg"
+import happy3 from "../../assets/images/happy3.jpg"
+
 // import bg_space1 from "../../assets/images/bg_space1.jpeg"
 
 export default function CryptoSocialComponent() {
@@ -99,7 +100,7 @@ export default function CryptoSocialComponent() {
         >
           {/* Left large image */}
           <div
-            className="w-full md:w-140 lg:w-80 h-64 md:h-50 lg:h-90 transition-all duration-700 ease-out transform"
+            className="w-full md:w-90 lg:w-80 h-64 md:h-auto lg:h-90 transition-all duration-700 ease-out transform"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? "translateY(0)" : "translateY(40px)",
@@ -107,7 +108,7 @@ export default function CryptoSocialComponent() {
             }}
           >
             <img
-              src={tab1}
+              src={long}
               alt="Friends dining"
               className="w-full h-full object-cover"
             />
@@ -125,7 +126,7 @@ export default function CryptoSocialComponent() {
             >
               <div className="w-1/2 h-28 md:h-34">
                 <img
-                  src={tab3}
+                  src={happy1}
                   alt="Friends laughing"
                   className="w-full h-full object-cover"
                 />
@@ -133,7 +134,7 @@ export default function CryptoSocialComponent() {
 
               <div className="w-1/2 h-28 md:h-34">
                 <img
-                  src={tab4}
+                  src={happy2}
                   alt="Friends drinking"
                   className="w-full h-full object-cover"
                 />
@@ -150,7 +151,7 @@ export default function CryptoSocialComponent() {
               }}
             >
               <img
-                src={tab5}
+                src={happy3}
                 alt="Happy person"
                 className="w-full h-full object-cover"
               />

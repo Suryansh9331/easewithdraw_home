@@ -157,7 +157,7 @@ const BusinessPartners = () => {
       </motion.h2>
       {/* Animated Underline */}
       <motion.div
-        className="h-1 w-50 sm:w-100 bg-pink-500 mx-auto mb-16 rounded-full"
+        className="h-1 w-20 sm:w-50 bg-pink-500 mx-auto mb-16 rounded-full"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
