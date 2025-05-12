@@ -116,9 +116,11 @@ const FAQ = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <button className="text-black font-semibold hover:underline inline-flex items-center gap-1">
+       <a href='#'>
+        <button className="text-black   font-semibold hover:underline inline-flex items-center gap-1">
           View More <span className="text-xl">→</span>
         </button>
+        </a>
       </div>
     </section>
   );

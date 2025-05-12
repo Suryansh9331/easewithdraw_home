@@ -192,9 +192,11 @@ export default function CryptoSocialComponent() {
           </div>
 
           {/* Call to action button */}
+         <a href="#">
           <button className="w-full py-3 px-8 rounded-full font-medium text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition-opacity shadow-lg">
             Why not surprise your friends with crypto?
           </button>
+          </a>
         </div>
       </div>
 
@@ -209,7 +211,7 @@ export default function CryptoSocialComponent() {
       >
         <div className="relative ">
           <div className="absolute left-1/2 transform -translate-x-1/4 w-38 lg:w-38 h-20 mt-4"></div>
-          <div className="relative flex items-center justify-center  w-16 h-16 rounded-full bg-pink-500 hover:bg-pink-600 transition-colors duration-300 cursor-pointer">
+          <div className="relative flex items-center justify-center  w-16 h-16 rounded-full bg-pink-500 hover:bg-pink-200 transition-colors duration-300 cursor-pointer">
             <Send className="text-white" size={28} />
           </div>
         </div>

@@ -83,9 +83,11 @@ export default function CryptoLandingPage() {
                 Deposit via Bitcoin, Ethereum, Solana, BSC, Polygon, Tron ,Arbitrum, and others
               </li>
             </ul>
-            <button className="mt-6 sm:mt-8 md:mt-10 px-6 sm:px-8 py-2 sm:py-3 bg-black text-white rounded-full font-semibold text-sm sm:text-base hover:bg-gray-800">
+            <a href="#">
+            <button className="mt-6 sm:mt-8 md:mt-10 px-6 sm:px-8 py-2 sm:py-3 bg-black text-white rounded-full font-semibold text-sm sm:text-base hover:bg-white hover:text-black">
               Get the app
             </button>
+          </a>
           </div>
 
           {/* Right Section */}

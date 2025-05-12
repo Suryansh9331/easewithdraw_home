@@ -146,9 +146,11 @@ const CryptoCardComponent = () => {
               </ul>
               
               <div className="flex flex-col xs:flex-row justify-start items-start xs:items-center gap-4 sm:gap-6 md:gap-10 mb-6 md:mb-12">
+              <a href='#'>
                 <button className="bg-pink-700 text-white font-bold px-6 md:px-8 py-2 md:py-3 rounded-full text-sm md:text-base hover:bg-pink-800 transition-colors duration-300 w-full xs:w-auto flex justify-center">
                   Get your card
                 </button>
+                </a>
                 <div className="flex gap-4 sm:gap-8 items-center mt-2 xs:mt-0">
                   <img src={GooglePlay} alt="Google Play" className="h-5 sm:h-6 md:h-8" />
                   <img src={ApplePlay} alt="Apple Pay" className="h-5 sm:h-6 md:h-8" />
