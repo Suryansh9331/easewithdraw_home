@@ -159,32 +159,37 @@ import CountUp from "react-countup";
 import telegram from "../../assets/images/telegram.jpeg";
 import starbucks from "../../assets/images/starbucks.jpeg";
 
-import mcdonalds from "../../assets/images/mcdonald.svg";
-import aliexpress from "../../assets/images/ali.svg";
-import telegram2 from "../../assets/images/telegram.svg";
-import starbucks2 from "../../assets/images/starbucks.svg";
-import uber from "../../assets/images/uber.svg";
-import paypal from "../../assets/images/paypal.svg";
-import amazon from "../../assets/images/amazon.svg";
-import youtube from "../../assets/images/youtube.svg";
-import tiktok from "../../assets/images/tiktok.svg";
-import facebook from "../../assets/images/facebook.svg";
-import kfc from "../../assets/images/kfc.svg";
+import paypal from "../../assets/images/Sixmembers/paypal.png"
+import coinbase from "../../assets/images/Sixmembers/coinbase.png"
+import nexo from "../../assets/images/Sixmembers/nexo.png"
+import cashapp from "../../assets/images/Sixmembers/cashapp.png"
+import robinhood from "../../assets/images/Sixmembers/robinhood.png"
+import trustwallet from "../../assets/images/Sixmembers/truswallet.png"
+
+
 import HeroVideo from "../../assets/Video/HeroVideo.mp4";
 
 export default function CryptoLandingPage() {
   const brandLogos = [
-    { name: "McDonald's", logo: mcdonalds },
-    { name: "AliExpress", logo: aliexpress },
-    { name: "Telegram", logo: telegram2 },
-    { name: "Starbucks", logo: starbucks2 },
-    { name: "Uber", logo: uber },
+    { name: "cashapp", logo: cashapp },
+    { name: "coinbase", logo: coinbase },
+    { name: "nexo", logo: nexo },
+    { name: "robinhood", logo: robinhood },
+    { name: "trustwallet", logo: trustwallet },
     { name: "PayPal", logo: paypal },
-    { name: "Amazon", logo: amazon },
-    { name: "tiktok", logo: tiktok },
-    { name: "YouTube", logo: youtube },
-    { name: "Facebook", logo: facebook },
-    { name: "KFC", logo: kfc },
+    { name: "cashapp", logo: cashapp },
+    { name: "coinbase", logo: coinbase },
+    { name: "nexo", logo: nexo },
+    { name: "robinhood", logo: robinhood },
+    { name: "trustwallet", logo: trustwallet },
+    { name: "PayPal", logo: paypal },
+    { name: "cashapp", logo: cashapp },
+    { name: "coinbase", logo: coinbase },
+    { name: "nexo", logo: nexo },
+    { name: "robinhood", logo: robinhood },
+    { name: "trustwallet", logo: trustwallet },
+    { name: "PayPal", logo: paypal },
+   
   ];
 
   const transactions = [
@@ -277,13 +282,13 @@ export default function CryptoLandingPage() {
             Accepted by 130M+ merchants worldwide
           </p>
           <div className="overflow-hidden w-full">
-            <div className="flex animate-marquee">
+            <div className="flex animate-marquee gap-10">
               {[...brandLogos, ...brandLogos].map((brand, index) => (
                 <div key={index} className="flex-shrink-0">
                   <img
                     src={brand.logo}
                     alt={brand.name}
-                    className="h-14 sm:h-10 md:h-16 lg:h-20 object-contain"
+                    className="h-12 sm:h-2 md:h-6 lg:h-10 object-contain"
                   />
                 </div>
               ))}
