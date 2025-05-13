@@ -144,7 +144,7 @@ const CryptoToFiatBanner = () => {
           <img
             src={transfer}
             alt="Transfer"
-            className="w-full  max-w-xs sm:max-w-sm md:max-w-md mx-auto rounded-lg shadow-lg"
+            className="w-full  max-w-xs sm:max-w-sm md:max-w-md mx-auto rounded-4xl shadow-lg"
           />
 
           {countryFlags.map((item, index) => (
